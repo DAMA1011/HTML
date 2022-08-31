@@ -7,23 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>超連結</title>
     <style>
-        a:link {
+        /* 兩種超連結與清單元素結合的寫法 */
+        /* .list a:link {
             text-decoration: none;
             color: red;
         }
 
-        a:visited {
+        .list a:visited {
             color: #FFD306;
         }
 
-        a:hover {
+        .list a:hover {
             text-decoration: underline;
             color: #4EFEB3;
         }
 
-        a:active {
+        .list a:active {
             color: #A5A552;
             font-size: 2em;
+        } */
+
+        .list>li>a:link {
+            text-decoration: none;
+            color: red;
+        }
+
+        .list>li>a:visited {
+            color: #FFD306;
+        }
+
+        .list>li>a:hover {
+            text-decoration: underline;
+            color: #4EFEB3;
+        }
+
+        .list>li>a:active {
+            color: #A5A552;
+            font-size: 2em;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bor1 {
+            border: 3px solid #C07AB8;
+            padding: 20px;
+        }
+
+        .bor2 {
+            border: 3px double #00FFFF;
+            padding: 20px;
+        }
+
+        .img1 {
+            float: left;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        p {
+            clear: both;
+        }
+
+        .fortitle {
+            padding: 20px 640px;
+            border: 3px solid red;
         }
     </style>
 </head>
@@ -35,13 +87,23 @@
     <a href="list.html" style="background-color:rgb(239, 202, 132)">List</a>
     <a href="#book1">書籤</a>
 
-    <ul>
+    <ul class="list">
         <li><a href="https://www.ispan.com.tw/">首頁</a></li>
         <li><a href="first.html">關於</a></li>
         <li><a href="list.html">清單</a></li>
     </ul>
 
-    <h2>英國估軒嵐諾「貫穿台灣北部」 賈新興揭2波觀測關鍵點</h2>
+    <h2 class="fortitle">英國估軒嵐諾「貫穿台灣北部」 賈新興揭2波觀測關鍵點</h2>
+
+    <img class="bor1 img1" src="images/p1.webp" alt="" title="" width="700"><img class="bor2 img2" src="images/p1.webp"
+        alt="" title="" width="700">
+
+    <p>
+        氣象局預報員劉宇其今天表示，今明兩天偏夏季天氣、天氣晴朗，午後西半部地區及東半部山區有局部短暫雷陣雨，明天（31日）雲林以南山區並有較大雨勢發生。至於中颱軒嵐諾目前約在台灣東北東方1600公里海面上，穩定向西偏西南西前進，預計31日晚間至9月1、2日導引氣流減弱，會在琉球附近打轉；而軒嵐諾目前強度是中度偏強，未來1天還是有機會變成強烈颱風，若升格則是今年第一個強烈颱風。
+    </p>
+    <p>
+        劉宇其指出，目前在軒嵐諾南南西方還有另一個熱帶系統發展，兩者距離約800公里，可能會互相牽制，讓軒嵐諾往南偏移；這個熱帶系統雖然有機會發展成熱帶性低氣壓，但因為發展的時間短，有很大的機會會被軒嵐諾合併，能否成為颱風還要再觀察。
+    </p>
 
     <!-- img 是 inline 元素，並排無換行 -->
     <!-- figure、figcaption 是 block 元素 -->

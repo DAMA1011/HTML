@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格元素</title>
+    <style>
+        .table1 {
+            border: 5px ridge gray;
+            border-collapse: collapse;
+            width: 1000px;
+        }
+
+        th {
+            border: 5px ridge gray;
+            font-size: 2em;
+        }
+
+        td {
+            border: 1px solid blue;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        thead {
+            background-color: rgb(51, 51, 251);
+            color: white;
+        }
+
+        tbody {
+            background-color: rgb(153, 153, 248);
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgb(188, 188, 247);
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: rgb(93, 168, 226);
+        }
+
+        tbody tr:hover {
+            color: red;
+        }
+
+        tbody td:hover {
+            color: rgb(61, 241, 61);
+        }
+
+        .bor1 {
+            border: 3px dotted yellow;
+        }
+
+        .bor2 {
+            border: 3px dotted rgb(122, 236, 138);
+        }
+
+        .bor3 {
+            border: 3px dotted rgb(243, 109, 203);
+        }
+
+        .bor4 {
+            border: 3px dotted rgb(237, 185, 56);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table1">
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+                <th>column5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="3" class="bor1">2</td>
+                <!-- <td>3</td> -->
+                <!-- <td>4</td> -->
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="3" class="bor2">2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="3" colspan="2" class="bor3">2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <!-- <td>3</td> -->
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <!-- <td>3</td> -->
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="bor4">1</td>
+                <!-- <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

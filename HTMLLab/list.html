@@ -6,6 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>製作清單</title>
+    <style>
+        .list1 {
+            list-style-type: square;
+        }
+
+        /* .list2 {
+            list-style-type: upper-alpha;
+        } */
+
+        .list2 {
+            list-style-type: none;
+            list-style-image: url(images/arrow1.png);
+            /* 導入圖片 */
+        }
+
+        .in {
+            background-color: rgb(242, 187, 84);
+            list-style-position: inside;
+            /* 跑到 block 裡面 */
+        }
+
+        .out {
+            background-color: rgb(244, 188, 85);
+            list-style-position: outside;
+            /* 預設效果 */
+        }
+
+        .bor1 {
+            border: 3px dashed #6FB7B7;
+            /* border-radius: 30px; */
+            border-radius: 30px 0 30px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,12 +49,27 @@
     <h2>新聞</h2>
     <!-- ul、ol、li、dl、dt、dd 都是 block 元素 -->
     <!-- 項目清單: 沒有先後順序 -->
-    <ul style="background-color:rgb(72, 72, 233)">
-        <li style="background-color:orange">焦點
-            <ol>
-                <li>焦點即時</li>
+    <ul class="list1" style="background-color:rgb(129, 129, 235)">
+        <li>焦點
+            <ol class="list2">
+                <li class="in">焦點即時</li>
                 <li>娛樂即時</li>
-                <li>國際即時</li>
+                <li class="out">國際即時</li>
+            </ol>
+        </li>
+        <li>即時</li>
+        <li>娛樂</li>
+        <li>國際</li>
+    </ul>
+    <h2>新聞</h2>
+    <!-- ul、ol、li、dl、dt、dd 都是 block 元素 -->
+    <!-- 項目清單: 沒有先後順序 -->
+    <ul class="bor1">
+        <li>焦點
+            <ol class="list2">
+                <li class="in">焦點即時</li>
+                <li>娛樂即時</li>
+                <li class="out">國際即時</li>
             </ol>
         </li>
         <li>即時</li>
