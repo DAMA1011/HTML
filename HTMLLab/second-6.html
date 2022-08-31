@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS基礎設定-自訂樣式(Class)</title>
+    <!-- 外掛樣式寫法(linking) -->
+    <link rel="stylesheet" href="styles/st1.css">
+    <!-- 同一層級，先定義的會被後定義的覆蓋過去(linking 被 type 覆蓋) -->
+    <style>
+        p {
+            color: blue;
+            text-decoration: underline;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 優先順序: Inline寫法 > ID寫法 > Class寫法 -->
+    <h1 style="color:blue" class="st1" id="theID1">Apple</h1>
+    <h2 class="st1">orange</h2>
+    <h2 class="st2">dog</h2>
+    <h3 class="st3">cat</h3>
+    <h4 class="st3">fox</h4>
+    <p>this is apple</p>
+</body>
+
+</html>

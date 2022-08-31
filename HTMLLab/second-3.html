@@ -12,6 +12,10 @@
             font-style: italic;
         }
 
+        #theID1 {
+            color: red;
+        }
+
         .st2 {
             color: blueviolet;
             text-decoration: underline;
@@ -21,15 +25,42 @@
             color: antiquewhite;
             font-size: 3em;
         }
+
+        .col1 {
+            color: rgb(239, 77, 117);
+        }
+
+        .col2 {
+            color: rgb(80, 224, 97);
+        }
+
+        .deco {
+            text-decoration: underline;
+        }
+
+        .tran {
+            text-transform: capitalize;
+        }
+
+        .sty {
+            font-style: italic;
+        }
+
+        .size {
+            font-size: 3em;
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="st1">Apple</h1>
+    <!-- 優先順序: Inline寫法 > ID寫法 > Class寫法 -->
+    <h1 style="color:blue" class="st1" id="theID1">Apple</h1>
     <h2 class="st1">orange</h2>
     <h2 class="st2">dog</h2>
     <h3 class="st3">cat</h3>
     <h4 class="st3">fox</h4>
+    <h4 class="col1 deco sty">car</h4>
+    <h4 class="col2 tran size">bike</h4>
 </body>
 
 </html>

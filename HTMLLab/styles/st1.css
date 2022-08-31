@@ -1,0 +1,48 @@
+.st1 {
+    color: rgb(23, 117, 117);
+    font-style: italic;
+}
+
+#theID1 {
+    color: red;
+}
+
+.st2 {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+h4.st3 {
+    color: antiquewhite;
+    font-size: 3em;
+}
+
+.col1 {
+    color: aliceblue;
+}
+
+.col2 {
+    color: aliceblue;
+}
+
+.deco {
+    text-decoration: underline;
+}
+
+.tran {
+    text-transform: capitalize;
+}
+
+.sty {
+    font-style: italic;
+}
+
+.size {
+    font-size: 3em;
+}
+
+p {
+    color: rgb(249, 66, 66);
+    text-transform: capitalize;
+    font-size: 2em;
+}
