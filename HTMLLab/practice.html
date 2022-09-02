@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LIN">
+    <meta name="generator" content="VS code">
+    <title>Practice</title>
+    <style>
+        .list a:link {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .list a:visited {
+            color: blue;
+        }
+
+        .list a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .list a:active {
+            color: blue;
+        }
+
+        img {
+            border: 3px solid red;
+            padding: 10px 20px;
+        }
+
+        table {
+            width: 300px;
+            border: 4px solid gray;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 3px solid brown;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<!-- Block: h1-h6, div, p, ul, ol, li, dl, dt, dd, figure, figcaption,  -->
+<!-- Inline: span, a, img,  -->
+
+<body>
+    <h2 title="apple!" style="color:red">APPLE</h2>
+    <hr>
+    <h1>Headings</h1>
+    <hr>
+    <div>
+        <h2>HTML</h2>
+        <p>From <span>1991 to 1999</span>, HTML developed from version1 to version4</p>
+        <hr>
+    </div>
+    <h2>新聞</h2>
+    <ul>
+        <li>焦點</li>
+        <li>即時</li>
+        <li>國際</li>
+    </ul>
+    <ol>
+        <li>焦點</li>
+        <li>即時</li>
+        <li>國際</li>
+    </ol>
+    <ul>
+        <li>焦點
+            <ol>
+                <li>即時焦點</li>
+                <li>國際焦點</li>
+            </ol>
+        </li>
+        <li>社會
+            <ol>
+                <li>北台灣</li>
+                <li>中台灣</li>
+            </ol>
+        </li>
+    </ul>
+    <h2>櫻花鉤吻鮭</h2>
+    <dl>
+        <dt>俗名</dt>
+        <dd>台灣鮭魚、台灣鱒</dd>
+        <dt>分類</dt>
+        <dd>鮭形目、鮭科</dd>
+    </dl>
+    <h2>櫻花鉤吻鮭</h2>
+    <dl>
+        <dt>俗名</dt>
+        <dd>台灣鮭魚、台灣鱒</dd>
+        <dt>分類</dt>
+        <dd>
+            <ul>
+                <li>鮭形目</li>
+                <li>鮭科</li>
+            </ul>
+        </dd>
+    </dl>
+    <!-- 在同一個伺服器裡，要使用相對路徑做超連結 -->
+    <a href="https://www.google.com.tw/">GOOGLE</a>
+    <a href="mailto:https://www.google.com.tw/">信箱</a>
+    <p id="mark1">內文</p>
+    <a href="#mark1">追蹤mark1書籤</a>
+    <figure>
+        <img src="images/p2.webp" alt="死檔" title="YOOOO">
+        <figcaption>這是一張圖</figcaption>
+    </figure>
+    <a href="https://www.google.com.tw/"><img src="images/p2.webp" alt="死檔" title="圖片超連結"></a>
+
+    <!-- HTML 語法 -->
+    <!-- <h2 title="apple!" style="color:red;text-size:2em">APPLE</h2> -->
+    <!--      屬性="屬性值"               CSS 語法 -->
+
+    <!-- CSS 語法 -->
+    <!-- <style>h2 { font-size:2em }</style> -->
+    <!-- Selector{屬性:屬性值;屬性:屬性值} -->
+
+    <!-- font-size 大小: 1em = 100% = 16px -->
+
+    <!-- 顏色的三種輸入法: 色名、色碼、RGB -->
+
+    <!-- text-decoration, text-transform, color, font-family, font-weight, font-style, font-size -->
+
+    <!-- 將 CSS 套用到 HTML 的三種方法 -->
+    <!-- 直接加入樣式(Inline) -->
+    <!-- 自訂樣式(Embedding): Type, Class, ID -->
+    <!-- 外掛樣式(Linking): 另外寫.css檔 -->
+
+    <!-- 外掛樣式語法 -->
+    <!-- <head><link rel="stylesheet" href="路徑及檔名"></head> -->
+
+    <ul class="list">
+        <li><a href="https://www.google.com.tw/">焦點</a></li>
+        <li><a href="https://www.google.com.tw/">即時</a></li>
+        <li><a href="https://www.google.com.tw/">國際</a></li>
+    </ul>
+
+    <!-- 清單樣式 -->
+    <!-- list-style-type, list-style-image, list-style-position -->
+
+    <!-- 邊框樣式 -->
+    <!-- border:邊框厚薄 邊框線條 邊框顏色 -->
+    <!-- CSS: 一個屬性有多個屬性值，用空格隔開 -->
+    <!-- border-radius(邊框圓角):10px -->
+
+    <!-- 方塊模型 -->
+    <!-- 邊界順序(內往外): content > padding > border > margin -->
+    <!-- padding: 元素到邊框 -->
+    <!-- margin: 邊框到邊界 -->
+
+    <!-- 浮動樣式 -->
+    <!-- float:none / right / left -->
+    <!-- clear(清除浮動):none / right / left / both -->
+
+    <!-- 表格(看範例) -->
+    <table>
+        <tr>
+            <th>num1</th>
+            <th>num2</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
