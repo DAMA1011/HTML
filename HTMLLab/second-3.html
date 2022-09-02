@@ -6,7 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS基礎設定-自訂樣式(Class)</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@500&display=swap"
+        rel="stylesheet"> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@500&display=swap');
+
+        @font-face {
+            font-family: font1;
+            src: url(fonts/JustOldFashion.ttf);
+        }
+
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            font-family: font2;
+            src: url(fonts/SCRIPTIN.ttf);
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+        .font3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+        }
+
         .st1 {
             color: rgb(23, 117, 117);
             font-style: italic;
@@ -22,7 +49,7 @@
         }
 
         h4.st3 {
-            color: antiquewhite;
+            color: rgb(207, 180, 146);
             font-size: 3em;
         }
 
@@ -55,12 +82,13 @@
 <body>
     <!-- 優先順序: Inline寫法 > ID寫法 > Class寫法 -->
     <h1 style="color:blue" class="st1" id="theID1">Apple</h1>
-    <h2 class="st1">orange</h2>
-    <h2 class="st2">dog</h2>
-    <h3 class="st3">cat</h3>
-    <h4 class="st3">fox</h4>
+    <h2 class="st1 font1">orange</h2>
+    <h2 class="st2 font1">dog</h2>
+    <h3 class="st3 font2">cat</h3>
+    <h4 class="st3 font2">fox</h4>
     <h4 class="col1 deco sty">car</h4>
     <h4 class="col2 tran size">bike</h4>
+    <p class="font3">This is a book</p>
 </body>
 
 </html>
