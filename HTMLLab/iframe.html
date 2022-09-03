@@ -6,9 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>框架iframe</title>
+    <style>
+        .div1 {
+            border: 1px solid red;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            /* 行距 = div 欄高 */
+        }
+
+        .div2 {
+            border: 1px solid green;
+            width: 200px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            /* 元素到邊框距離 */
+        }
+    </style>
 </head>
 
 <body>
+    <div class="div1">ABCD</div>
+    <br>
+    <div class="div2">ABCD</div>
+    <br>
     <!-- 特殊字元 -->
     &copy;<br>&reg;<br>&#8482;<br>&lt;<br>&gt;<br>
     <hr>

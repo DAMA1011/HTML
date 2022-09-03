@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Visibility-Overflow</title>
+    <style>
+        .list {
+            background-color: rgb(177, 222, 239);
+            overflow: auto;
+            list-style-type: none;
+        }
+
+        .list li {
+            width: 6em;
+            font-size: 3em;
+            float: left;
+            line-height: 2em;
+            /* border-right: 1px solid gray; */
+            /* border-left: 1px solid gray; */
+        }
+
+        .list li a {
+            /* 把 a 標籤改成 block */
+            display: block;
+            text-align: center;
+        }
+
+        .list li a:link {
+            text-decoration: none;
+        }
+
+        .list li a:hover {
+            background-color: rgb(129, 235, 196);
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .dis {
+            display: none;
+        }
+
+        .visi {
+            visibility: hidden;
+        }
+
+        .over1 {
+            width: 200px;
+            height: 90px;
+            border: 1px solid gray;
+            overflow: auto;
+            margin: 30px;
+        }
+
+        .over2 {
+            width: 200px;
+            height: 90px;
+            border: 1px solid gray;
+            overflow: hidden;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="list">
+            <li><a href="https://www.ispan.com.tw/">首頁</a></li>
+            <li><a href="first.html">關於</a></li>
+            <li><a href="list.html">清單</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="dis">ABCDEFG</h1>
+    <h2>abcdefg</h2>
+    <hr>
+    <h1 class="visi">ABCDEFG</h1>
+    <h2>abcdefg</h2>
+    <hr>
+    <div class="over1">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉
+    </div>
+    <div class="over2">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉拉
+    </div>
+</body>
+
+</html>
